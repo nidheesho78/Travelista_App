@@ -22,7 +22,7 @@ const Header = () => {
   const location = useLocation();
   
   const isLandingRoute = location.pathname === '/landing';
-const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = 'https://travelista.nidheesh.world/';
 
 
   const [hasUnreadMessages, setHasUnreadMessages] = useState(false); // State for unread messages

@@ -16,7 +16,7 @@ import animationData from '../animation/animation_llz6cgwy.json'
 
 
 
-const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = 'https://travelista.nidheesh.world';
 var socket , selectedChatCompare;
 
 const ChatComponent = ({ chatRoomId, unreadMessages, setUnreadMessages }) => {

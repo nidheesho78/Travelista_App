@@ -15,7 +15,7 @@ import { BASE_URL } from '../config.js';
 
 
 
-const ENDPOINT = 'http://localhost:5000';
+const ENDPOINT = 'https://travelista.nidheesh.world';
 var socket , selectedChatCompare;
 
 const ChatComponent = ({ chatRoomId, unreadMessages, setUnreadMessages }) => {

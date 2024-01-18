@@ -10,7 +10,7 @@ import { toast } from 'react-toastify';
 import io from 'socket.io-client';
 import { BASE_URL } from '../config.js';
 import { useSelector } from 'react-redux';
-const END_POINT = 'http://localhost:5000';
+const END_POINT = 'https://travelista.nidheesh.world/';
     
 
 
@@ -142,7 +142,7 @@ const ChatRoom = () => {
 
     // Make an API request to delete messages by chat room ID
     try {
-      await axios.delete(`https://ansaren.online/api/users/deleteMessageId/${chatRoomId}`, {
+      await axios.delete(`https://travelista.nidheesh.world/api/users/deleteMessageId/${chatRoomId}`, {
         withCredentials: true,
       });
 

@@ -9,7 +9,7 @@ import path from "path";
 const port = process.env.PORT || 5000;
 import userRoutes from "./routes/userRoutes.js";
 import adminRoutes from "./routes/adminRoutes.js";
-import { Server } from "Socket.io"
+import { Server } from "socket.io";
 import commentRoutes from "./routes/commentRoutes.js";
 import blogRoutes from "./routes/blogRoutes.js";
 import chatRoutes from "./routes/chatRoutes.js";
@@ -19,7 +19,7 @@ connectDB();
 
 const app = express();
 const corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: "https://travelista.nidheesh.world",
   credentials: true,
 };
 app.use(cors(corsOptions));
@@ -59,7 +59,9 @@ const server = app.listen(port, () =>
 const io = new Server(server, {
   pingTimeout: 60000,
   cors: {
-    origin: ["http://localhost:5000",'http://localhost:3000'],
+    origin: [
+      "https://travelista.nidheesh.world"
+    ],
   },
 });
 io.on("connection", (socket) => {

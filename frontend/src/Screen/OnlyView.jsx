@@ -121,7 +121,7 @@ const ViewBlog = () => {
       <div className='imageView'>
         {selectedBlog.images.length > 0 && (
         // <Image
-        //   src={`https://ansaren.online/api/users/${selectedBlog.images[0]}`}
+        //   src={`https://travelista.nidheesh.world/api/users/${selectedBlog.images[0]}`}
         //   alt='Blog'
         //   className='viewImageOndiv'
         // />

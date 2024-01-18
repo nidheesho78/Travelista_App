@@ -2,7 +2,7 @@ import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import authReducer from './slices/AuthSlice.js';
 import { apiSlice } from './slices/ApiSlice.js';
 import adminReducer from './adminSlice/AdminAuthSlice.js'
-// import checkTokenMiddleware from './middleware/checkTokenMIddleware'
+
 
 
 const rootReducer = combineReducers({
