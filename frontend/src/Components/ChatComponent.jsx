@@ -337,7 +337,7 @@ const typingHandler = (e) => {
               <h3 className='commentH3'>{msg.content}</h3>
             </div>
             <div className='commentTime' style={{ paddingBottom: "0.1rem" }}>
-              <h5 className='commentH5'>4.20pm</h5>
+              <h5 className='commentH5'></h5>
             </div>
           </div>
         ))}

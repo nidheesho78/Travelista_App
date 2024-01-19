@@ -142,15 +142,6 @@ const ChatRoom = () => {
 
     // Make an API request to delete messages by chat room ID
     try {
-      await axios.delete(`${BASE_URL}/api/users/deleteMessageId/${chatRoomId}`, {
-        withCredentials: true,
-      });
-
-
-
-
-
-
    // After deleting messages, update the unreadMessages state to mark this chat room as read
    setUnreadMessages((prevState) => ({
     ...prevState,
